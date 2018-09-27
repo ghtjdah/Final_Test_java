@@ -14,6 +14,10 @@ public class Student {
 		this.name = name;
 		this.subnum = subnum;
 		test = new Test[subnum];
+		for(int i=0;i<subnum;i++)
+		{
+			test[i] = new Test();
+		}
 		this.getName();
 	}
 
@@ -41,7 +45,7 @@ public class Student {
 		
 		for(Test t : this.test)
 		{
-			t.getPoint();
+			System.out.println(t.getPoint());
 		}
 		
 		System.out.println("รัมก : "+getGrade());

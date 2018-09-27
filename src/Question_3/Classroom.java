@@ -9,7 +9,7 @@ public class Classroom {
 		kim.test[0].setPoint("국어", 95);
 		kim.test[1].setPoint("영어", 83);
 		kim.test[2].setPoint("수학", 76);
-		kim.printScore();
+		kim.printScore(); 
 		
 		Student lee = new Student(7, "이민기", 3);
 		lee.test[0].setPoint("국어", 66);

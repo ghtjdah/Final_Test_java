@@ -9,6 +9,11 @@ public class CalcApp {
 		
 		int num1=0, num2=0, result=0;
 		
+		Arithmetic add = new Add();
+		Arithmetic sub = new Sub();
+		Arithmetic mul = new Mul();
+		Arithmetic div = new Div();
+		
 		while(true)
 		{
 			Scanner scanner = new Scanner(System.in);
@@ -28,22 +33,18 @@ public class CalcApp {
 			switch(splitstr[splitstr.length-1])
 			{
 			case "+":
-				Add add = new Add();
 				result = add.calculate(num1, num2);
 				break;
 				
 			case "-":
-				Sub sub = new Sub();
 				result = sub.calculate(num1, num2);
 				break;
 				
 			case "*":
-				Mul mul = new Mul();
 				result = mul.calculate(num1, num2);
 				break;
 				
 			case "/":
-				Div div = new Div();
 				result = div.calculate(num1, num2);
 				break;
 				
