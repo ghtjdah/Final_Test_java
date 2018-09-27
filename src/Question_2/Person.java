@@ -12,7 +12,7 @@ public class Person {
 		this.age = age;
 		this.name = name;
 		numberofPerson++;
-		System.out.println("현재 인구수는 "+numberofPerson+"명 입니다.");
+		System.out.println("현재 인구수는 "+getPopulation()+"명 입니다.");
 	}
 	
 	public Person() {
@@ -20,7 +20,7 @@ public class Person {
 		this.age = 12;
 		this.name = "";
 		numberofPerson++;
-		System.out.println("현재 인구수는 "+numberofPerson+"명 입니다.");
+		System.out.println("현재 인구수는 "+getPopulation()+"명 입니다.");
 	}
 	
 	public void selfIntroduce()
